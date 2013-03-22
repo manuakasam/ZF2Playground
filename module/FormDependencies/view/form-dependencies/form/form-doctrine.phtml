@@ -1,0 +1,13 @@
+<?php
+$title = 'Dynamic Form\Element\Select using Doctrine ObjectManager';
+$this->headTitle($title);?>
+
+    <h1><?php echo $title;?></h1>
+
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('form-table-action'))
+    ->prepare();
+
+echo $this->formCollection($form);
+?>

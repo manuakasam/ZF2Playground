@@ -3,7 +3,6 @@ namespace FormDependencies\Form;
 
 use Zend\Form\Form;
 use Zend\Db\Adapter\AdapterInterface;
-use Zend\Db\Sql\Sql;
 
 class DbAdapterForm extends Form
 {
@@ -19,7 +18,7 @@ class DbAdapterForm extends Form
             'name'    => 'db-select',
             'type'    => 'Zend\Form\Element\Select',
             'options' => array(
-                'label'         => 'Dynamic DB Select',
+                'label'         => 'Dynamic DbAdapter Select',
                 'value_options' => $this->getOptionsForSelect(),
                 'empty_option'  => '--- please choose ---'
             )
