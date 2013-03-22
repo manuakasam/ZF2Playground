@@ -1,0 +1,13 @@
+<?php
+$title = 'Dynamic Form\Element\Select using DbAdapter';
+$this->headTitle($title);?>
+
+<h1><?php echo $title;?></h1>
+
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('form-dba-action'))
+     ->prepare();
+
+echo $this->formCollection($form);
+?>
